@@ -18,7 +18,6 @@ And(/^I select the dates in the appropriate search form fields in "(.*?)"$/) do 
   $ted.readEnv
   siteName = siteName + ' ' + $environment
   $poHome::CalendarCommand(siteName)
-  $poHome::ValidateDate(siteName)
 end
 
 And(/^I select the dates in results page appropriate search form fields in "(.*?)"$/) do |siteName|
