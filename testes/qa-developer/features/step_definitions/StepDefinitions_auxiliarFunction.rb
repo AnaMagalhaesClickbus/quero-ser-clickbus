@@ -7,7 +7,7 @@ Given(/^the test configuration data has been initialized$/) do
 end
 
 When(/^I access the webpage$/) do
-  # Aqui você deverá fazer o selenium acessar o site da clickbus
+  visit "https://clickbus.com.br/"
 end
 
 And(/^I fill in search form box with my origin place and destination$/) do 

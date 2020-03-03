@@ -6,11 +6,13 @@ class Desktop
   end
 
   def fill_search()
-      
-    # Aqui você deverá implementar a função para preencher os dados de origem e destino da viagem
-
+      fill_in 'widget-vertical-origin-place', with: 'Rio de Janeiro, RJ - Rodov. do Rio'
+      origin = find('.tt-suggestion.tt-selectable.tt-cursor')
+      origin.click
+      fill_in 'widget-vertical-destination-place', with: 'Sao Paulo, SP - TODOS'
+      destination = find('.tt-suggestion.tt-selectable.tt-cursor')
+      destination.click
   end
-
   def CheckHeaderSearch(siteName)
     siteName = siteName.split(' ')[0].downcase
     within 'header' do
